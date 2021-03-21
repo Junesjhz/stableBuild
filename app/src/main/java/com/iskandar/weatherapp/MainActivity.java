@@ -96,6 +96,7 @@ public class MainActivity extends AppCompatActivity {
                         //Toast.makeText(MainActivity.this, weatherReportModel.toString(), Toast.LENGTH_SHORT).show();
                         ArrayAdapter arrayAdapter = new ArrayAdapter(MainActivity.this, android.R.layout.simple_list_item_1, weatherReportModel);
                         lv_weatherReports.setAdapter(arrayAdapter);
+                        //for pull test
                     }
                 });
             }
