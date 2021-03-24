@@ -17,7 +17,7 @@ public class SplashScreenActivity extends AppCompatActivity {
     ImageView bg_splash, logo_splash;
     TextView tv_splash;
     LottieAnimationView lottie_splash;
-    private static int SPLASH_TIME_OUT = 3200;
+    private static int SPLASH_TIME_OUT = 3085;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,9 +29,9 @@ public class SplashScreenActivity extends AppCompatActivity {
         tv_splash = findViewById(R.id.tv_splash);
         lottie_splash = findViewById(R.id.lottie_splash);
 
-        bg_splash.animate().translationY(-3200).setDuration(1000).setStartDelay(2500);
-        logo_splash.animate().translationY(2800).setDuration(1000).setStartDelay(2500);
-        tv_splash.animate().translationY(2800).setDuration(1000).setStartDelay(2500);
+        //bg_splash.animate().translationY(-3200).setDuration(1000).setStartDelay(2500);
+        logo_splash.animate().translationY(-3200).setDuration(1000).setStartDelay(2500);
+        tv_splash.animate().translationY(-3200).setDuration(1000).setStartDelay(2500);
         lottie_splash.animate().translationY(2800).setDuration(1000).setStartDelay(2500);
 
         new Handler().postDelayed(new Runnable(){
