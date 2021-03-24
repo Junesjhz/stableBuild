@@ -65,7 +65,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:fontFamily="casual"
-                android:text=""
+                android:text="Dear Guest"
                 android:textSize="16dp"
                 android:textColor="@color/white"
                 android:shadowColor="@color/black"

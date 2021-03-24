@@ -5,14 +5,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <EditText
-        android:id="@+id/et_loginEmail"
+        android:id="@+id/et_signupEmail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/edit_text_bg"
         app:layout_constraintWidth_percent="0.8"
         app:layout_constraintVertical_bias="0.3"
         app:layout_constraintHorizontal_bias="0.5"
-        android:hint="Username"
+        android:hint="Email"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
@@ -22,7 +22,25 @@
         app:layout_constraintTop_toTopOf="parent"/>
 
     <EditText
-        android:id="@+id/et_loginPassword"
+        android:id="@+id/et_mobilenumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_bg"
+        android:hint="Mobile No."
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_signupEmail"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <EditText
+        android:id="@+id/et_signupPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -35,16 +53,34 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/et_loginEmail"
+        app:layout_constraintTop_toBottomOf="@id/et_mobilenumber"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <EditText
+        android:id="@+id/et_confirmPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_bg"
+        android:hint="Confirm Password"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_signupPassword"
         app:layout_constraintVertical_bias="0"
         app:layout_constraintWidth_percent="0.8" />
 
     <Button
-        android:id="@+id/btn_login"
+        android:id="@+id/btn_signUp"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/button_bg"
-        android:text="Login"
+        android:text="Sign up"
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
