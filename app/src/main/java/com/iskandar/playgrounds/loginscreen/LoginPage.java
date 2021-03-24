@@ -28,6 +28,8 @@ public class LoginPage extends AppCompatActivity {
         fab_instagram = findViewById(R.id.fab_item03);
 
         final LoginAdapter adapter = new LoginAdapter(getSupportFragmentManager(),this);
+        adapter.addFragment(new LoginTabFragment());
+        adapter.addFragment(new SignupTabFragment());
         vp_loginSignup.setAdapter(adapter);
         tl_loginSignup.setupWithViewPager(vp_loginSignup);
 

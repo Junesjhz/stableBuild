@@ -8,9 +8,12 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
+import java.util.ArrayList;
+
 public class LoginAdapter extends FragmentPagerAdapter {
 
     private Context context;
+    private ArrayList<Fragment> fragments = new ArrayList<Fragment>();
 
     public LoginAdapter(FragmentManager fm, Context context) {
         super(fm);
@@ -23,16 +26,7 @@ public class LoginAdapter extends FragmentPagerAdapter {
     }
 
     public Fragment getItem(int position) {
-        switch(position){
-            case 0:
-                LoginTabFragment loginTabFragment = new LoginTabFragment();
-                return loginTabFragment;
-            case 1:
-                SignupTabFragment signupTabFragment = new SignupTabFragment();
-                return signupTabFragment;
-            default:
-                return null;
-        }
+        return fragments.get(position);
     }
 
     @Nullable
@@ -43,5 +37,17 @@ public class LoginAdapter extends FragmentPagerAdapter {
             case 1: return "Sign Up";
             default: return "";
         }
+    }
+
+    public void addFragment(Fragment fragment) {
+        fragments.add(fragment);
+    }
+
+    public void removeFragments(Fragment fragment) {
+        fragments.remove(fragment);
+    }
+
+    public void removeFragments(int position) {
+        fragments.remove(position);
     }
 }
