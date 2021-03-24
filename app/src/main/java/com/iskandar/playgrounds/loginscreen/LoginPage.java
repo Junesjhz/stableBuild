@@ -27,10 +27,6 @@ public class LoginPage extends AppCompatActivity {
         fab_twitter = findViewById(R.id.fab_item02);
         fab_instagram = findViewById(R.id.fab_item03);
 
-        tl_loginSignup.addTab(tl_loginSignup.newTab().setText("Login"));
-        tl_loginSignup.addTab(tl_loginSignup.newTab().setText("Sign Up"));
-        tl_loginSignup.setTabGravity(tl_loginSignup.GRAVITY_FILL);
-
         final LoginAdapter adapter = new LoginAdapter(getSupportFragmentManager(),this);
         vp_loginSignup.setAdapter(adapter);
         tl_loginSignup.setupWithViewPager(vp_loginSignup);

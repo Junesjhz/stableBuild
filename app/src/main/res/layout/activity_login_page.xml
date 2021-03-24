@@ -47,7 +47,8 @@
                 android:id="@+id/tl_tabLayout01"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/curved_bg" />
+                android:background="@drawable/curved_bg"
+                app:tabGravity="fill"/>
         </androidx.viewpager.widget.ViewPager>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
