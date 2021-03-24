@@ -1,4 +1,4 @@
-package com.iskandar.weatherapp;
+package com.iskandar.playgrounds.weatherapp;
 
 import android.content.Context;
 
@@ -126,7 +126,7 @@ public class WeatherDataService {
                         getCityForecastByNameCallBack.onError(ERROR_MESSAGE);
                     }
                     @Override
-                    public void onResponse(java.util.List<com.iskandar.weatherapp.WeatherReportModel> weatherReportModel) {
+                    public void onResponse(java.util.List<WeatherReportModel> weatherReportModel) {
                         getCityForecastByNameCallBack.onResponse(weatherReportModel);
                     }
                 });

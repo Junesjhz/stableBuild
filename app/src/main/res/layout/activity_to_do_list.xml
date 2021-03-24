@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ToDoList">
+    tools:context=".todolist.ToDoList">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cl_todo_top"

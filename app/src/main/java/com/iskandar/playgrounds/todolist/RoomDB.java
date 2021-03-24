@@ -1,6 +1,5 @@
-package com.iskandar.weatherapp;
+package com.iskandar.playgrounds.todolist;
 
-import android.content.ContentValues;
 import android.content.Context;
 
 import androidx.room.Database;

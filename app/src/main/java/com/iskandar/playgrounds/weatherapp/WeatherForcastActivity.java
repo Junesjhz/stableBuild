@@ -1,4 +1,4 @@
-package com.iskandar.weatherapp;
+package com.iskandar.playgrounds.weatherapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import com.iskandar.playgrounds.R;
 
 import java.util.List;
 

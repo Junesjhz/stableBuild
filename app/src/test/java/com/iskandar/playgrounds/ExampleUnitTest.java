@@ -1,4 +1,4 @@
-package com.iskandar.weatherapp;
+package com.iskandar.playgrounds;
 
 import org.junit.Test;
 

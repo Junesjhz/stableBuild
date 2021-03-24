@@ -1,4 +1,4 @@
-package com.iskandar.weatherapp;
+package com.iskandar.playgrounds;
 
 import androidx.appcompat.app.AppCompatActivity;
 

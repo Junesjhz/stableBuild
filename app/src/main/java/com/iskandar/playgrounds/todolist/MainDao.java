@@ -1,4 +1,4 @@
-package com.iskandar.weatherapp;
+package com.iskandar.playgrounds.todolist;
 
 import androidx.room.Dao;
 import androidx.room.Delete;

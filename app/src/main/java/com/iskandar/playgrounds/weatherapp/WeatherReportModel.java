@@ -1,4 +1,4 @@
-package com.iskandar.weatherapp;
+package com.iskandar.playgrounds.weatherapp;
 
 public class WeatherReportModel {
     private int id;

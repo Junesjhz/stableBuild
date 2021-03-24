@@ -1,4 +1,4 @@
-package com.iskandar.weatherapp;
+package com.iskandar.playgrounds.todolist;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;

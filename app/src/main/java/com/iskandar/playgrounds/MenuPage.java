@@ -1,4 +1,4 @@
-package com.iskandar.weatherapp;
+package com.iskandar.playgrounds;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -7,6 +7,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+
+import com.iskandar.playgrounds.todolist.ToDoList;
+import com.iskandar.playgrounds.weatherapp.WeatherForcastActivity;
 
 public class MenuPage extends AppCompatActivity implements View.OnClickListener{
     private CardView CV_ITEM01, CV_ITEM02;
@@ -32,8 +35,8 @@ public class MenuPage extends AppCompatActivity implements View.OnClickListener{
 
         switch (cv_onclick.getId()){
             //icon button
-            case R.id.cv_item01 : onClick_intent = new Intent(this,ToDoList.class);startActivity(onClick_intent); break;
-            case R.id.cv_item02 : onClick_intent = new Intent(this,WeatherForcastActivity.class);startActivity(onClick_intent); break;
+            case R.id.cv_item01 : onClick_intent = new Intent(this, ToDoList.class);startActivity(onClick_intent); break;
+            case R.id.cv_item02 : onClick_intent = new Intent(this, WeatherForcastActivity.class);startActivity(onClick_intent); break;
             default : break;
         }
     }

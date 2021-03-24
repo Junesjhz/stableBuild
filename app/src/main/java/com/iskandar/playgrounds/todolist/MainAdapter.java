@@ -1,4 +1,4 @@
-package com.iskandar.weatherapp;
+package com.iskandar.playgrounds.todolist;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -13,6 +13,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.iskandar.playgrounds.R;
 
 import java.util.List;
 

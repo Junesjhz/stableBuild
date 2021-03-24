@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.iskandar.weatherapp">
+    package="com.iskandar.playgrounds">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -11,16 +11,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WeatherApp">
-        <activity android:name=".LoginPage"></activity>
-        <activity android:name=".WeatherForcastActivity"></activity>
-        <activity android:name=".ToDoList"></activity>
-        <activity android:name=".MenuPage">
+        <activity android:name=".splashscreen.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".LoginPage" />
+        <activity android:name=".weatherapp.WeatherForcastActivity" />
+        <activity android:name=".todolist.ToDoList" />
+        <activity android:name=".MenuPage" />
     </application>
 
 </manifest>
