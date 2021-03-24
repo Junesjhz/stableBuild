@@ -3,6 +3,7 @@ package com.iskandar.playgrounds.loginscreen;
 import android.content.Context;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
@@ -10,17 +11,15 @@ import androidx.fragment.app.FragmentPagerAdapter;
 public class LoginAdapter extends FragmentPagerAdapter {
 
     private Context context;
-    int totalTabs;
 
-    public LoginAdapter(FragmentManager fm, Context context, int totalTabs) {
+    public LoginAdapter(FragmentManager fm, Context context) {
         super(fm);
         this.context = context;
-        this.totalTabs = totalTabs;
     }
 
     @Override
     public int getCount() {
-        return totalTabs;
+        return 2;
     }
 
     public Fragment getItem(int position) {
@@ -33,6 +32,16 @@ public class LoginAdapter extends FragmentPagerAdapter {
                 return signupTabFragment;
             default:
                 return null;
+        }
+    }
+
+    @Nullable
+    @Override
+    public CharSequence getPageTitle(int position) {
+        switch(position) {
+            case 0: return "Login";
+            case 1: return "Sign Up";
+            default: return "";
         }
     }
 }

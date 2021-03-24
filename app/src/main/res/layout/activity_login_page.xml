@@ -39,22 +39,16 @@
             android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHeight_percent="0.7"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tl_tabLayout01"
-            app:layout_constraintVertical_bias="0" />
-
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tl_tabLayout01"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/curved_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0" />
+            app:layout_constraintVertical_bias="0">
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tl_tabLayout01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/curved_bg" />
+        </androidx.viewpager.widget.ViewPager>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab_item01"

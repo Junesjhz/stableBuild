@@ -31,8 +31,9 @@ public class LoginPage extends AppCompatActivity {
         tl_loginSignup.addTab(tl_loginSignup.newTab().setText("Sign Up"));
         tl_loginSignup.setTabGravity(tl_loginSignup.GRAVITY_FILL);
 
-        final LoginAdapter adapter = new LoginAdapter(getSupportFragmentManager(),this, tl_loginSignup.getTabCount());
+        final LoginAdapter adapter = new LoginAdapter(getSupportFragmentManager(),this);
         vp_loginSignup.setAdapter(adapter);
+        tl_loginSignup.setupWithViewPager(vp_loginSignup);
 
         vp_loginSignup.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tl_loginSignup));
 
