@@ -14,6 +14,7 @@ public class LoginAdapter extends FragmentPagerAdapter {
 
     private Context context;
     private ArrayList<Fragment> fragments = new ArrayList<Fragment>();
+    private ArrayList<String> titles = new ArrayList<String>();
 
     public LoginAdapter(FragmentManager fm, Context context) {
         super(fm);
@@ -22,7 +23,7 @@ public class LoginAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 2;
+        return fragments.size();
     }
 
     public Fragment getItem(int position) {
@@ -32,22 +33,21 @@ public class LoginAdapter extends FragmentPagerAdapter {
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
-        switch(position) {
-            case 0: return "Login";
-            case 1: return "Sign Up";
-            default: return "";
-        }
+        return titles.get(position);
     }
 
-    public void addFragment(Fragment fragment) {
+    public void addFragment(Fragment fragment, String title) {
         fragments.add(fragment);
+        titles.add(title);
     }
 
-    public void removeFragments(Fragment fragment) {
+    public void removeFragment(Fragment fragment, String title) {
         fragments.remove(fragment);
+        titles.remove(title);
     }
 
-    public void removeFragments(int position) {
+    public void removeFragment(int position) {
         fragments.remove(position);
+        titles.remove(position);
     }
 }
