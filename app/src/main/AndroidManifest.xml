@@ -11,15 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WeatherApp">
-        <activity android:name=".splashscreen.SplashScreenActivity">
-        </activity>
-        <activity android:name=".loginscreen.LoginPage">
+        <activity android:name=".loginpage.SignupMenu">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".loginpage.LoginMenu" />
+        <activity android:name=".splashscreen.SplashScreenActivity" />
+        <activity android:name=".loginscreen.LoginPage"></activity>
         <activity android:name=".weatherapp.WeatherForcastActivity" />
         <activity android:name=".todolist.ToDoList" />
         <activity android:name=".MenuPage" />
