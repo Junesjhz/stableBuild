@@ -12,18 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WeatherApp">
         <activity android:name=".loginpage.SignupMenu">
+        </activity>
+        <activity android:name=".loginpage.LoginMenu" />
+        <activity android:name=".splashscreen.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".loginpage.LoginMenu" />
-        <activity android:name=".splashscreen.SplashScreenActivity" />
-        <activity android:name=".loginscreen.LoginPage"></activity>
-        <activity android:name=".weatherapp.WeatherForcastActivity" />
-        <activity android:name=".todolist.ToDoList" />
-        <activity android:name=".MenuPage" />
+        <activity android:name=".weatherapp.WeatherForcastActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".todolist.ToDoList"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MenuPage"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
